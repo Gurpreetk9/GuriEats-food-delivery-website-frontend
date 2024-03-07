@@ -4,7 +4,7 @@ import AppRoutes from "./AppRoutes";
 import Auth0ProviderWithNavigate from "../src/auth/Auth0ProviderWithNavigate";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Toaster } from "sonner";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import * as React from "react";
 
 const queryClient = new QueryClient({
@@ -14,7 +14,7 @@ const queryClient = new QueryClient({
     },
   },
 });
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <Router>
       <QueryClientProvider client={queryClient}>
