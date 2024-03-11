@@ -21,8 +21,16 @@ function UserMenu() {
       <DropdownMenuContent>
         <DropdownMenuItem>
           <Link
+            to="/manage-restaurant"
+            className="font-bold hover:text-seeGreen px-4"
+          >
+            Manage-restaurant
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <Link
             to="/user-profile"
-            className="font-bold hover:text-seeGreen px-10"
+            className="font-bold hover:text-seeGreen px-4"
           >
             User-profile
           </Link>
