@@ -4,6 +4,7 @@ import Layout from "./Layouts/Layout";
 import AuthCallbackPage from "./pages/AuthCallbackPage";
 import HomePage from "./pages/HomePage";
 import ManageRestaurantPage from "./pages/ManageRestaurantPage";
+import Searchpage from "./pages/SearchPage";
 import UserProfilePage from "./pages/UserProfilePage";
 function AppRoutes() {
   return (
@@ -17,6 +18,14 @@ function AppRoutes() {
         }
       ></Route>
       <Route path="/auth-callback" element={<AuthCallbackPage />}></Route>
+      <Route
+        path="/search/:city"
+        element={
+          <Layout ishero={false}>
+            <Searchpage />
+          </Layout>
+        }
+      />
       <Route element={<ProtectedRoutes />}>
         <Route
           path="/user-profile"
