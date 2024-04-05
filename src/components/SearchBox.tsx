@@ -19,7 +19,7 @@ type props = {
   onSubmit: (formData: SearchData) => void;
   placeholder: string;
   onReset?: () => void;
-  searchQuery: string;
+  searchQuery?: string;
 };
 function SearchBox({ onSubmit, onReset, placeholder, searchQuery }: props) {
   const form = useForm<SearchData>({
