@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import ProtectedRoutes from "./auth/ProtectedRoutes";
 import Layout from "./Layouts/Layout";
 import AuthCallbackPage from "./pages/AuthCallbackPage";
+import DetailPage from "./pages/DetailPage";
 import HomePage from "./pages/HomePage";
 import ManageRestaurantPage from "./pages/ManageRestaurantPage";
 import Searchpage from "./pages/SearchPage";
@@ -23,6 +24,14 @@ function AppRoutes() {
         element={
           <Layout ishero={false}>
             <Searchpage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/detail/:restaurantId"
+        element={
+          <Layout ishero={false}>
+            <DetailPage />
           </Layout>
         }
       />
