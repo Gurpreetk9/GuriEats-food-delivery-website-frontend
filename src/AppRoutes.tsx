@@ -5,6 +5,7 @@ import AuthCallbackPage from "./pages/AuthCallbackPage";
 import DetailPage from "./pages/DetailPage";
 import HomePage from "./pages/HomePage";
 import ManageRestaurantPage from "./pages/ManageRestaurantPage";
+import OrderStatusPage from "./pages/OrderStatusPage";
 import Searchpage from "./pages/SearchPage";
 import UserProfilePage from "./pages/UserProfilePage";
 function AppRoutes() {
@@ -49,6 +50,14 @@ function AppRoutes() {
           element={
             <Layout>
               <ManageRestaurantPage />
+            </Layout>
+          }
+        ></Route>
+        <Route
+          path="/order-status"
+          element={
+            <Layout>
+              <OrderStatusPage />
             </Layout>
           }
         ></Route>

@@ -7,6 +7,12 @@ function MobileNavLinks() {
   return (
     <>
       <Link
+        to="/order-status"
+        className="flex bg-white items-center text-lg font-bold hover:text-seeGreen"
+      >
+        Order Status
+      </Link>
+      <Link
         to="/manage-restaurant"
         className="flex bg-white items-center text-lg font-bold hover:text-seeGreen"
       >
